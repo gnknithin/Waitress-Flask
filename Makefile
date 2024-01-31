@@ -22,7 +22,7 @@ ruff-fix:
 	ruff check --fix .
 pre-push: mypy ruff
 install-testing-req:
-	pip3 install pytest pytest-asyncio pytest-cov pytest-dotenv
+	pip3 install pytest pytest-asyncio pytest-cov pytest-dotenv locust
 install-linting-req:
 	pip3 install autopep8 mypy ruff
 install-req:
