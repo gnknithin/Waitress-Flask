@@ -5,4 +5,5 @@ class TestHealthHandler(HttpUser):
     def test_should_check_health_handler_properly(self):
         # Arrange
         # Act
+        self.client.get("/health")
         # Assert
