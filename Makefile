@@ -44,6 +44,8 @@ install-dev-req: upgrade-pip install-linting-req install-testing-req install-req
 install-prod-req: upgrade-pip install-req
 run-dev-server:
 	python3 src/server.py -p 8888 -c ./configs/development.yaml -d
+run-locust:
+	locust -f tests/load/test_health_handler.py
 run-unit-test:
 	pytest -vv --cov --cov-report=term-missing ./tests/unit
 run-integration-test:
