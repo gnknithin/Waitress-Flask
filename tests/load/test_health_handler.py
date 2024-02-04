@@ -1,3 +1,4 @@
+# https://progressstory.com/tech/python/stress-test-with-locust-python-application/
 from locust import HttpUser, task
 class TestHealthHandler(HttpUser):
 
