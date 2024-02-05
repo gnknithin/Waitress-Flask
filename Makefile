@@ -46,6 +46,7 @@ run-dev-server:
 	python3 src/server.py -p 8888 -c ./configs/development.yaml -d
 run-locust:
 	locust -f tests/load/test_health_handler.py
+run-load-test: run-dev-server run-locust
 run-unit-test:
 	pytest -vv --cov --cov-report=term-missing ./tests/unit
 run-integration-test:
